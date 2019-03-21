@@ -6,24 +6,21 @@
  * source tree.
  */
 
-
+#include <stdio.h>
 #include <errno.h>
-#include <unistd.h>
 #include <fcntl.h>
-#include <sys/types.h>
 #include "posixtest.h"
 
-#define TNAME "cmcc_posix/read-1.c"
-#define INFO_LEN 71
+#define TNAME "cmcc_posix/lseek-1.c"
 
 int main(void)
 {
+
 	int fd;
 	int result;
-	char write_info[INFO_LEN] = "This is a test file that will be used to demonstrate the use of lseek.";
-	char read_info[INFO_LEN] = {};
+	char write_info[] = "This is a test file that will be used to demonstrate the use of lseek.";
 	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
-	char *pathname = "/tmp/cmcc_posix_read_1";
+	char *pathname = "/tmp/cmcc_posix_lseek_1";
 
 	// init file content
 	fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
@@ -47,29 +44,8 @@ int main(void)
 		return PTS_FAIL;
 	}
 
-	// read
-	fd = open(pathname, O_RDONLY, mode);
-	if (fd < 0)
-	{
-		printf(TNAME " Error at open(): %s\n", strerror(errno));
-		return PTS_FAIL;
-	}
-	result = read(fd, read_info, INFO_LEN);
-	printf("read_info %s\n", read_info);
-	if (result == -1 || result != INFO_LEN)
-	{
-		printf(TNAME " Error at read(): %s\n", strerror(errno));
-		return PTS_FAIL;
-	}
-	result = close(fd);
-	if (result != 0)
-	{
-		printf(TNAME " Error at close(): %s\n", strerror(errno));
-		return PTS_FAIL;
-	}
-
-	// read lseek
-	fd = open(pathname, O_RDONLY, mode);
+	// sleek, modify wirte
+	fd = open(pathname, O_WRONLY, mode);
 	if (fd < 0)
 	{
 		printf(TNAME " Error at open(): %s\n", strerror(errno));
@@ -82,11 +58,30 @@ int main(void)
 		printf(TNAME " Error at lseek(): %s\n", strerror(errno));
 		return PTS_FAIL;
 	}
-	result = read(fd, read_info, INFO_LEN);
-	printf("read_info %s\n", read_info);
-	if (result == -1)
+	result = write(fd, write_info, sizeof(write_info));
+	if (result < 0)
 	{
-		printf(TNAME " Error at read(): %s\n", strerror(errno));
+		printf(TNAME " Error at write(): %s\n", strerror(errno));
+		return PTS_FAIL;
+	}
+	result = close(fd);
+	if (result != 0)
+	{
+		printf(TNAME " Error at close(): %s\n", strerror(errno));
+		return PTS_FAIL;
+	}
+
+	// append write
+	fd = open(pathname, O_WRONLY | O_APPEND, mode);
+	if (fd < 0)
+	{
+		printf(TNAME " Error at open(): %s\n", strerror(errno));
+		return PTS_FAIL;
+	}
+	result = write(fd, write_info, sizeof(write_info));
+	if (result < 0)
+	{
+		printf(TNAME " Error at write(): %s\n", strerror(errno));
 		return PTS_FAIL;
 	}
 	result = close(fd);
