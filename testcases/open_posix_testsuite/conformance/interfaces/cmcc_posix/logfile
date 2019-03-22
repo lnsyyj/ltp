@@ -1,0 +1,135 @@
+conformance/interfaces/cmcc_posix/stat-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/stat-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/stat-1.c:27:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:27:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:27:25: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/stat-1.c:27:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:27:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:30:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:30:57: error: ‘errno’ undeclared (first use in this function)
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:33:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^
+conformance/interfaces/cmcc_posix/stat-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/stat-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/stat-1.c:34:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at stat(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/stat-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/stat-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/stat-1.c:34:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at stat(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/stat-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/stat-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:25: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:28:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:31:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/stat-1.c:34:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^
+../../../conformance/interfaces/cmcc_posix/stat-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at stat(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/stat-1 compile PASSED
+conformance/interfaces/cmcc_posix/readlink-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/readlink-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/readlink-1.c:45:20: error: ‘link_path’ undeclared (first use in this function)
+  result = readlink(link_path, target_path, sizeof(target_path))
+                    ^
+../../../conformance/interfaces/cmcc_posix/readlink-1.c:45:20: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/readlink-1.c:46:2: error: expected ‘;’ before ‘if’
+  if (result == -1)
+  ^
+conformance/interfaces/cmcc_posix/readlink-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/readlink-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/readlink-1.c:45:20: error: ‘link_path’ undeclared (first use in this function)
+  result = readlink(link_path, target_path, sizeof(target_path));
+                    ^
+../../../conformance/interfaces/cmcc_posix/readlink-1.c:45:20: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/open-1 compile PASSED
+conformance/interfaces/cmcc_posix/creat-1 compile PASSED
+conformance/interfaces/cmcc_posix/access-1 compile PASSED
+conformance/interfaces/cmcc_posix/chown-1 compile PASSED
+conformance/interfaces/cmcc_posix/unlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/close-1 compile PASSED
+conformance/interfaces/cmcc_posix/read-1 compile PASSED
+conformance/interfaces/cmcc_posix/write-1 compile PASSED
+conformance/interfaces/cmcc_posix/rename-1 compile PASSED
+conformance/interfaces/cmcc_posix/symlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/dup-1 compile PASSED
+conformance/interfaces/cmcc_posix/lseek-1 compile PASSED
+conformance/interfaces/cmcc_posix/dup2-1 compile PASSED
+conformance/interfaces/cmcc_posix/chmod-1 compile PASSED
+conformance/interfaces/cmcc_posix/stat-1 compile PASSED
+conformance/interfaces/cmcc_posix/link-1 compile PASSED
+conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
