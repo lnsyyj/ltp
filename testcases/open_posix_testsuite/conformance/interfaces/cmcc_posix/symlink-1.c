@@ -32,7 +32,7 @@ int main(void)
 	result = symlink(pathname, newpathname);
 	if (result == -1)
 	{
-		printf(TNAME " Error at link(): %s\n", strerror(errno));
+		printf(TNAME " Error at symlink(): %s\n", strerror(errno));
 		return PTS_FAIL;
 	}
 
