@@ -26,6 +26,7 @@ int main(void)
     void *start;
     struct stat sb;
     char write_info[] = "This is a test file that will be used to demonstrate the use of lseek.";
+    char write_info_new[] = "write_info_new";
     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
     char *pathname = "/tmp/cmcc_posix_munmap_1";
 
