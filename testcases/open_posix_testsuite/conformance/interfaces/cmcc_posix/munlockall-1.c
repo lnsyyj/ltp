@@ -6,18 +6,21 @@
  * source tree.
  */
 
-
+#include <stdio.h>
+#include <unistd.h>     /* Support all standards    */
+#include <stdlib.h>     /* malloc support           */
+#include <sys/mman.h>   /* Memory locking functions */
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>
-#include <sys/mman.h>
-#include <stdio.h>
 #include <errno.h>
+
+
 #include "posixtest.h"
 
-#define TNAME "cmcc_posix/mmap-1.c"
+#define TNAME "cmcc_posix/munlockall-1.c"
 
+#define BUFFER 2048
 
 int main(void)
 {
@@ -27,7 +30,7 @@ int main(void)
     struct stat sb;
     char write_info[] = "This is a test file that will be used to demonstrate the use of lseek.";
     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
-    char *pathname = "/tmp/cmcc_posix_mmap_1";
+    char *pathname = "/tmp/cmcc_posix_munlockall_1";
 
     // init file
     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
@@ -74,18 +77,31 @@ int main(void)
     }
     printf("%s\n", start); 
 
-    result = munmap(start, sb.st_size);
+	if ( mlockall(MCL_CURRENT | MCL_FUTURE) == -1 )
+	{
+		perror("mlockall error");
+		return PTS_FAIL;
+	}
+
+	if ( munlockall() == -1 )
+	{
+		perror("munlockall error");
+		return PTS_FAIL;
+	}
+
+	result = munmap(start, sb.st_size);
     if (result == -1)
     {
         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
         return PTS_FAIL;
     }
-    
+
     result = close(fd);
     if (result != 0)
     {
         printf(TNAME " Error at close(): %s\n", strerror(errno));
         return PTS_FAIL;
     }
-    return PTS_PASS;
+
+	return PTS_PASS;
 }
