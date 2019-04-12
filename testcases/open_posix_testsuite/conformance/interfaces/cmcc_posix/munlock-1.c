@@ -18,7 +18,7 @@
 
 #include "posixtest.h"
 
-#define TNAME "cmcc_posix/mlockall-1.c"
+#define TNAME "cmcc_posix/munlock-1.c"
 
 #define BUFFER 2048
 
@@ -30,7 +30,7 @@ int main(void)
     struct stat sb;
     char write_info[] = "This is a test file that will be used to demonstrate the use of lseek.";
     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
-    char *pathname = "/tmp/cmcc_posix_mlockall_1";
+    char *pathname = "/tmp/cmcc_posix_munlock_1";
 
     // init file
     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
@@ -77,15 +77,15 @@ int main(void)
     }
     printf("%s\n", start); 
 
-	if ( mlock(start, sb.st_size) == -1 )
+	if ( mlockall(MCL_CURRENT | MCL_FUTURE) == -1 )
 	{
-		perror("mlock error");
+		perror("mlockall error");
 		return PTS_FAIL;
 	}
 
-	if ( munlock(start, sb.st_size) == -1 )
+	if ( munlockall() == -1 )
 	{
-		perror("munlock error");
+		perror("munlockall error");
 		return PTS_FAIL;
 	}
 

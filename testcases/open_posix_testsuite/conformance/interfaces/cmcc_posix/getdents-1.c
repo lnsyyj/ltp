@@ -6,58 +6,70 @@
  * source tree.
  */
 
-/*
- *Some of you have reached the point in the project where you need to read
- *the contents of a directory to handle attributes such as "ALL" and
- *"ALLUSER".   At the user-level, you can use routines such as opendir(),
- *readdir() and scandir(), which are all library routines (not system
- *calls).  These routines work if all your code is at the user level, but
- *eventually you will need to move it to the kernel level.  The following
- *program uses the system call getdents() to read the contents of a
- *directory.  See the man page for getdents() for more info.  The program
- *assumes that a directory is given on the command line as an argument.
- *Because this is a more "obscure" system call, there is not an entry for it
- *the right header file so it is necessary to include the _syscall3 entry in
- *the code to describe the parameters of the system call.
-				- Craig Wills
- */
-
-// open a directory then read and print all entries
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
+#define _GNU_SOURCE
 #include <dirent.h>
-// #include <linux/unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
 #include <unistd.h>
-#include "posixtest.h"
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/syscall.h>
+#include <errno.h>
 
+#include "posixtest.h"
 #define TNAME "cmcc_posix/getdents-1.c"
 
-extern int errno;
+struct linux_dirent
+{
+    long           d_ino;
+    off_t          d_off;
+    unsigned short d_reclen;
+    char           d_name[];
+};
 
-/*
-The line _syscall3(int, getdents, ...); should have been added to
-/usr/src/linux/include/linux/dirent.h for users to use this systemcall.
-However, it was omitted for some reason. Maybe a bug.
-*/
-_syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+#define BUF_SIZE 1024*1024*5
 
 int main(void)
 {
-    int fd;
-    struct dirent dent;
+    int fd, nread;
+    char buf[BUF_SIZE];
+    struct linux_dirent *d;
+    int bpos;
+    char d_type;
     char *pathname = "/tmp";
 
-    if ((fd = open(pathname, O_RDONLY)) < 0) {
-        fprintf(stderr, "Failed to open %s\n", pathname);
+    fd = open(pathname, O_RDONLY | O_DIRECTORY);
+    if (fd == -1)
+    {
+        printf(TNAME " Error at open(): %s\n", strerror(errno));
         return PTS_FAIL;
     }
-    else {
-        while (getdents(fd, &dent, sizeof(dent)) > 0) {
-            printf("%s\n", dent.d_name);
-            lseek(fd, dent.d_off, SEEK_SET);
+
+    for ( ; ; )
+    {
+        nread = syscall(SYS_getdents, fd, buf, BUF_SIZE);
+        if (nread == -1)
+        {
+            printf(TNAME " Error at getdents(): %s\n", strerror(errno));
+            return PTS_FAIL;
+        }
+
+        if (nread == 0)
+        {
+            break;
+        }
+
+        for (bpos = 0; bpos < nread;)
+        {
+            d = (struct linux_dirent *) (buf + bpos);
+            d_type = *(buf + bpos + d->d_reclen - 1);
+            if( d->d_ino != 0 && d_type == DT_REG )
+            {
+                printf("%s\n", (char *)d->d_name );
+            }
+            bpos += d->d_reclen;
         }
     }
-    close(fd);
+
     return PTS_PASS;
 }

@@ -133,3 +133,1808 @@ conformance/interfaces/cmcc_posix/link-1 compile PASSED
 conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
 conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
 conformance/interfaces/cmcc_posix/readlink-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mmap-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:36:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:36:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:43:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:50:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:58:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:65:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:72:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:75:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:77:5: warning: implicit declaration of function ‘munma’ [-Wimplicit-function-declaration]
+     result = munma(start, sb.st_size);
+     ^
+../../../conformance/interfaces/cmcc_posix/mmap-1.c:80:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munma(): %s\n", strerror(errno));
+         ^
+/tmp/ccG0Q1vN.o: In function `main':
+/root/ltp/testcases/open_posix_testsuite/conformance/interfaces/cmcc_posix/../../../conformance/interfaces/cmcc_posix/mmap-1.c:77: undefined reference to `munma'
+collect2: error: ld returned 1 exit status
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/msync-1 compile PASSED
+conformance/interfaces/cmcc_posix/fseek-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fseek-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:29:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+     printf("offset = %d\n", ftell(stream));
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:32:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘fpos_t’ [-Wformat=]
+     printf("offset = %d\n", pos);
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:33:9: error: incompatible types when assigning to type ‘fpos_t’ from type ‘int’
+     pos = 10;
+         ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:35:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+     printf("offset = %d\n", ftell(stream));
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:23:10: warning: unused variable ‘offset’ [-Wunused-variable]
+     long offset;
+          ^
+conformance/interfaces/cmcc_posix/fseek-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fseek-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:29:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+     printf("offset = %d\n", ftell(stream));
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:32:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘fpos_t’ [-Wformat=]
+     printf("offset = %d\n", pos);
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:33:9: error: incompatible types when assigning to type ‘fpos_t’ from type ‘int’
+     pos = 10;
+         ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:35:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+     printf("offset = %d\n", ftell(stream));
+     ^
+../../../conformance/interfaces/cmcc_posix/fseek-1.c:23:10: warning: unused variable ‘offset’ [-Wunused-variable]
+     long offset;
+          ^
+conformance/interfaces/cmcc_posix/fseek-1 compile PASSED
+conformance/interfaces/cmcc_posix/fseek-1 compile PASSED
+conformance/interfaces/cmcc_posix/fseek-1 compile PASSED
+conformance/interfaces/cmcc_posix/fseek-1 compile PASSED
+conformance/interfaces/cmcc_posix/getcwd-1 compile PASSED
+conformance/interfaces/cmcc_posix/getcwd-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:32:26: fatal error: linux/dirent.h: No such file or directory
+ #include <linux/dirent.h>
+                          ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:59:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:59:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:33:24: fatal error: sys/dirent.h: No such file or directory
+ #include <sys/dirent.h>
+                        ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:33:24: fatal error: sys/dirent.h: No such file or directory
+ #include <sys/dirent.h>
+                        ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:59:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:30:18: fatal error: stat.h: No such file or directory
+ #include <stat.h>
+                  ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:30:18: fatal error: stat.h: No such file or directory
+ #include <stat.h>
+                  ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:31:19: fatal error: types.h: No such file or directory
+ #include <types.h>
+                   ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:35:19: fatal error: types.h: No such file or directory
+ #include <types.h>
+                   ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:50:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:63:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile PASSED
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: FAILED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: FAILED: Output: 
+cmcc_posix/readlink-1.c Error at link(): File exists
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/mmap-1 compile PASSED
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:25:17: error: storage size of ‘sb’ isn’t known
+     struct stat sb;
+                 ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:19: error: ‘S_IRUSR’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                   ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:29: error: ‘S_IWUSR’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:39: error: ‘S_IRGRP’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                                       ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:49: error: ‘S_IROTH’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                                                 ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:34:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:34:57: error: ‘errno’ undeclared (first use in this function)
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:25: error: ‘O_RDWR’ undeclared (first use in this function)
+     fd = open(pathname, O_RDWR, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:60:5: warning: implicit declaration of function ‘fstat’ [-Wimplicit-function-declaration]
+     result = fstat(fd, &sb);    // get file size
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:73:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:25:17: warning: unused variable ‘sb’ [-Wunused-variable]
+     struct stat sb;
+                 ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:25:17: error: storage size of ‘sb’ isn’t known
+     struct stat sb;
+                 ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:19: error: ‘S_IRUSR’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                   ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:19: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:29: error: ‘S_IWUSR’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:39: error: ‘S_IRGRP’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                                       ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:27:49: error: ‘S_IROTH’ undeclared (first use in this function)
+     mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;
+                                                 ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:5: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:25: error: ‘O_WRONLY’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:36: error: ‘O_CREAT’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:31:46: error: ‘O_TRUNC’ undeclared (first use in this function)
+     fd = open(pathname, O_WRONLY | O_CREAT | O_TRUNC, mode);
+                                              ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:34:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:34:57: error: ‘errno’ undeclared (first use in this function)
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:25: error: ‘O_RDWR’ undeclared (first use in this function)
+     fd = open(pathname, O_RDWR, mode);
+                         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:60:5: warning: implicit declaration of function ‘fstat’ [-Wimplicit-function-declaration]
+     result = fstat(fd, &sb);    // get file size
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:73:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:25:17: warning: unused variable ‘sb’ [-Wunused-variable]
+     struct stat sb;
+                 ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile PASSED
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/fcntl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:23:13: error: ‘filename’ undeclared (first use in this function)
+  fd = creat(filename, mode);
+             ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:23:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:26:3: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+   printf(TNAME " Error at creat(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:26:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:31:2: warning: passing argument 1 of ‘fcntl’ makes integer from pointer without a cast [enabled by default]
+  if((var=fcntl(pathname, F_GETFL, 0))<0)
+  ^
+In file included from ../../../conformance/interfaces/cmcc_posix/fcntl-1.c:9:0:
+/usr/include/fcntl.h:163:12: note: expected ‘int’ but argument is of type ‘char *’
+ extern int fcntl (int __fd, int __cmd, ...);
+            ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:33:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   printf(TNAME " fcntl file error(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:52:6: error: ‘val’ undeclared (first use in this function)
+  if (val & O_APPEND)
+      ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: error: ‘ptr’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:18: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+                  ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/fcntl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+   printf(TNAME " Error at creat(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:32:2: warning: passing argument 1 of ‘fcntl’ makes integer from pointer without a cast [enabled by default]
+  if((var=fcntl(pathname, F_GETFL, 0)) < 0)
+  ^
+In file included from ../../../conformance/interfaces/cmcc_posix/fcntl-1.c:9:0:
+/usr/include/fcntl.h:163:12: note: expected ‘int’ but argument is of type ‘char *’
+ extern int fcntl (int __fd, int __cmd, ...);
+            ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:34:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   printf(TNAME " fcntl file error(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: error: ‘val’ undeclared (first use in this function)
+  if (val & O_APPEND)
+      ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: error: ‘ptr’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:18: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+                  ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/fcntl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+   printf(TNAME " Error at creat(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:32:2: warning: passing argument 1 of ‘fcntl’ makes integer from pointer without a cast [enabled by default]
+  if((var=fcntl(pathname, F_GETFL, 0)) < 0)
+  ^
+In file included from ../../../conformance/interfaces/cmcc_posix/fcntl-1.c:9:0:
+/usr/include/fcntl.h:163:12: note: expected ‘int’ but argument is of type ‘char *’
+ extern int fcntl (int __fd, int __cmd, ...);
+            ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:34:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   printf(TNAME " fcntl file error(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: error: ‘val’ undeclared (first use in this function)
+  if (val & O_APPEND)
+      ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: error: ‘ptr’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:18: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+                  ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/fcntl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+   printf(TNAME " Error at creat(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:27:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:32:2: warning: passing argument 1 of ‘fcntl’ makes integer from pointer without a cast [enabled by default]
+  if((var=fcntl(pathname, F_GETFL, 0)) < 0)
+  ^
+In file included from ../../../conformance/interfaces/cmcc_posix/fcntl-1.c:9:0:
+/usr/include/fcntl.h:163:12: note: expected ‘int’ but argument is of type ‘char *’
+ extern int fcntl (int __fd, int __cmd, ...);
+            ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:34:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   printf(TNAME " fcntl file error(): %s\n", strerror(errno));
+   ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: error: ‘val’ undeclared (first use in this function)
+  if (val & O_APPEND)
+      ^
+../../../conformance/interfaces/cmcc_posix/fcntl-1.c:53:6: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: error: ‘ptr’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:18: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+                  ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/fcntl-1 compile PASSED
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: error: ‘ptr’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+             ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:13: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:18: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(ptr, st.st_size) == -1 )
+                  ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(start, st.st_size) == -1 )
+                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(start, st.st_size) == -1 )
+                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(start, st.st_size) == -1 )
+                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:39:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:46:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at write(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:53:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:61:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:68:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at fstat(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:75:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at mmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:78:5: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘void *’ [-Wformat=]
+     printf("%s\n", start); 
+     ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: error: ‘st’ undeclared (first use in this function)
+  if ( mlock(start, st.st_size) == -1 )
+                    ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:95:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at munmap(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/mlockall-1.c:102:9: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+         printf(TNAME " Error at close(): %s\n", strerror(errno));
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/mlockall-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:17:21: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+                     ^
+compilation terminated.
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:64:21: error: storage size of ‘list’ isn’t known
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:69:51: error: ‘errno’ undeclared (first use in this function)
+   printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                   ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:69:51: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:72:5: warning: implicit declaration of function ‘isastream’ [-Wimplicit-function-declaration]
+     if(isastream(fd) == 0)
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:81:27: error: ‘I_LIST’ undeclared (first use in this function)
+     if((nmods = ioctl(fd, I_LIST, (void *) 0)) < 0)
+                           ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:91:44: error: invalid application of ‘sizeof’ to incomplete type ‘struct str_mlist’
+     list.sl_modlist = calloc(nmods, sizeof(struct str_mlist));
+                                            ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:64:21: warning: unused variable ‘list’ [-Wunused-variable]
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:61:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+              ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:61:26: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+                          ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:64:21: error: storage size of ‘list’ isn’t known
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:69:51: error: ‘errno’ undeclared (first use in this function)
+   printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                   ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:69:51: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:72:5: warning: implicit declaration of function ‘isastream’ [-Wimplicit-function-declaration]
+     if(isastream(fd) == 0)
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:81:27: error: ‘I_LIST’ undeclared (first use in this function)
+     if((nmods = ioctl(fd, I_LIST, (void *) 0)) < 0)
+                           ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:91:44: error: invalid application of ‘sizeof’ to incomplete type ‘struct str_mlist’
+     list.sl_modlist = calloc(nmods, sizeof(struct str_mlist));
+                                            ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:64:21: warning: unused variable ‘list’ [-Wunused-variable]
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:61:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+              ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:61:26: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+                          ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:65:21: error: storage size of ‘list’ isn’t known
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:73:5: warning: implicit declaration of function ‘isastream’ [-Wimplicit-function-declaration]
+     if(isastream(fd) == 0)
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:82:27: error: ‘I_LIST’ undeclared (first use in this function)
+     if((nmods = ioctl(fd, I_LIST, (void *) 0)) < 0)
+                           ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:82:27: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:92:44: error: invalid application of ‘sizeof’ to incomplete type ‘struct str_mlist’
+     list.sl_modlist = calloc(nmods, sizeof(struct str_mlist));
+                                            ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:65:21: warning: unused variable ‘list’ [-Wunused-variable]
+     struct str_list list;
+                     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:62:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+              ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:62:26: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+                          ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:78:5: warning: implicit declaration of function ‘isastream’ [-Wimplicit-function-declaration]
+     if(isastream(fd) == 0)
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:87:27: error: ‘I_LIST’ undeclared (first use in this function)
+     if((nmods = ioctl(fd, I_LIST, (void *) 0)) < 0)
+                           ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:87:27: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:97:44: error: invalid application of ‘sizeof’ to incomplete type ‘struct str_mlist’
+     list.sl_modlist = calloc(nmods, sizeof(struct str_mlist));
+                                            ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:119:28: error: increment of pointer to unknown structure
+             list.sl_modlist++->l_name);
+                            ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:119:13: error: arithmetic on pointer to an incomplete type
+             list.sl_modlist++->l_name);
+             ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:119:30: error: dereferencing pointer to incomplete type
+             list.sl_modlist++->l_name);
+                              ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+              ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:26: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char *argv[])
+                          ^
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:16: error: unknown type name ‘getdents’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:26: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                          ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:32: error: unknown type name ‘fd’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:53: error: unknown type name ‘dirp’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                     ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:59: error: unknown type name ‘uint’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                           ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:43:65: error: unknown type name ‘count’
+ _syscall3(int, getdents, uint, fd, struct dirent *, dirp, uint, count);
+                                                                 ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:56:9: warning: implicit declaration of function ‘getdents’ [-Wimplicit-function-declaration]
+         while (getdents(fd, &dent, sizeof(dent)) > 0) {
+         ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:90:19: error: ‘FIOGETOWN’ undeclared (first use in this function)
+     if (ioctl(fd, FIOGETOWN, &own) < 0) {
+                   ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:90:19: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:95:19: error: ‘FIOSETOWN’ undeclared (first use in this function)
+     if (ioctl(fd, FIOSETOWN, &pid) < 0) 
+                   ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:90:19: error: ‘FIOGETOWN’ undeclared (first use in this function)
+     if (ioctl(fd, FIOGETOWN, &own) < 0) {
+                   ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:90:19: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:95:19: error: ‘FIOSETOWN’ undeclared (first use in this function)
+     if (ioctl(fd, FIOSETOWN, &pid) < 0) 
+                   ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:55:9: error: redefinition of ‘result’
+     int result = ioctl(fd, FIONREAD, &str_io);
+         ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:36:9: note: previous definition of ‘result’ was here
+     int result = -1;
+         ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:55:9: error: redefinition of ‘result’
+     int result = ioctl(fd, FIONREAD, &str_io);
+         ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:36:9: note: previous definition of ‘result’ was here
+     int result = -1;
+         ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: error: ‘ioctl_str’ undeclared (first use in this function)
+     ioctl_str.str_len = 1;
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:74:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: error: ‘ioctl_str’ undeclared (first use in this function)
+     ioctl_str.str_len = 1;
+     ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:66:5: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:74:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:24: error: ‘FIOGETOWN’ undeclared (first use in this function)
+     result = ioctl(fd, FIOGETOWN, &str_io);
+                        ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:24: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:74:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:24: error: ‘FIOGETOWN’ undeclared (first use in this function)
+     result = ioctl(fd, FIOGETOWN, &str_io);
+                        ^
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:67:24: note: each undeclared identifier is reported only once for each function it appears in
+../../../conformance/interfaces/cmcc_posix/ioctl-1.c:74:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     result = close(fd);
+     ^
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/ioctl-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ioctl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlock-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: FAILED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_getdents-1: execution: FAILED: Output: 
+open: Is a directory
+conformance/interfaces/cmcc_posix/cmcc_posix_fcntl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: SIGNALED: Output: 
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: FAILED: Output: 
+cmcc_posix/readlink-1.c Error at link(): File exists
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ioctl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlock-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getdents-1: execution: FAILED: Output: 
+open: Is a directory
+conformance/interfaces/cmcc_posix/cmcc_posix_fcntl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ioctl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlock-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getdents-1: execution: FAILED: Output: 
+open: Is a directory
+conformance/interfaces/cmcc_posix/cmcc_posix_fcntl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/cmcc_posix_open-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ioctl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlock-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_creat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fsync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_access-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mkdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getcwd-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chown-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_unlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_getdents-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fcntl-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_close-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_read-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_write-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_opendir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rmdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fstat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rewinddir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_closedir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_rename-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_symlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_truncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_munmap-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_fchmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_mlockall-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_lseek-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_dup2-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chmod-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_chdir-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_ftruncate-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_msync-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_stat-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_link-1: execution: PASS
+conformance/interfaces/cmcc_posix/cmcc_posix_readlink-1: execution: PASS
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:57: error: ‘errno’ undeclared (first use in this function)
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                         ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:57: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/getdents-1 compile FAILED; SKIPPING
+../../../conformance/interfaces/cmcc_posix/getdents-1.c: In function ‘main’:
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:9: warning: implicit declaration of function ‘strerror’ [-Wimplicit-function-declaration]
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+         ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:57: error: ‘errno’ undeclared (first use in this function)
+         printf(TNAME " Error at open(): %s\n", strerror(errno));
+                                                         ^
+../../../conformance/interfaces/cmcc_posix/getdents-1.c:46:57: note: each undeclared identifier is reported only once for each function it appears in
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
+conformance/interfaces/cmcc_posix/getdents-1 compile PASSED
